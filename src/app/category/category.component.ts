@@ -2,12 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {CategoryService} from '../services/category.service';
 import { Router } from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import {ListCategoryComponent} from '../list-category/list-category.component';
 
 @Component({
   selector: 'app-category',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    ListCategoryComponent
   ],
   templateUrl: './category.component.html',
   styleUrl: './category.component.css'

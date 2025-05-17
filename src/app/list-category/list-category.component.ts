@@ -34,7 +34,7 @@ export class ListCategoryComponent implements OnInit{
   }
 
 
-  deleteCategory(id:any) {
+  deleteCategory(id:number) {
     console.log("ok")
     let conf = confirm("'Voulez-vous le supprimer Category?")
     if (conf){
