@@ -23,7 +23,7 @@ export class CategoryService {
     return this.http.get(`${this.url}/${id}`)
   }
 
-  supprimercategory(id:any):Observable<any>{
-    return this.http.delete(`${this.url}/${id}`)
+  supprimercategory(id:number):Observable<any>{
+    return this.http.delete(`http://localhost:8080/category/${id}`)
   }
 }
